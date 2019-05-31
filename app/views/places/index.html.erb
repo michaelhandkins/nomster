@@ -3,9 +3,15 @@
     <h1><%= link_to place.name, place_path(place) %></h1><br />
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
-    <div class="index_pic">
-      <%= image_tag place.photos.picture.url %>
-    </div>
+    
+    <% if place.photos.present? %>
+      <div class="index_pic">
+        <% if place.photos.last.url.present? %>
+          <%= image_tag place.photos.picture.last.url %>
+        <% end %>
+      </div>
+    <% end %>
+    
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
     <% end %>
