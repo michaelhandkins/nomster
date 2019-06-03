@@ -6,9 +6,7 @@
     
     <% if place.photos.present? %>
       <div class="index_pic">
-        <% if place.photos.picture.last.url.present? %>
-          <%= image_tag place.photos.picture.last.url %>
-        <% end %>
+          <%= image_tag place.photos.last.picture.url %>
       </div>
     <% end %>
     
