@@ -123,14 +123,15 @@ blockquote p {
   display: inline;
 }
 
-index_pic {
-  width: 200px;
-  height: 150px;
+img {
+  max-width: 70%;
+  height: 250px;
 }
 
+
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  max-height: 550px;
-  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .carousel-caption {
