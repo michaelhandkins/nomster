@@ -3,7 +3,7 @@
 <div class="booyah-box col-10 offset-1">
   <div class="row">
     <div class="col-3">
-      <%= image_tag "user.png" %>
+      <%= image_tag "user.png", class: "user-image" %>
     </div>
 
     <div class="col-7">
@@ -22,9 +22,10 @@
 <br />
 <h1 class="text-center">My Comments</h1>
 <br />
+<div class="booyah-box col-10 offset-1">
 <div class="row">
 <% @user.comments.each do |comment| %>
- <div class="col-10 col-sm-5 offset-1">
+  <div class="col-12 col-sm-6">
   <h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
     <blockquote>
       <% if comment.humanized_rating.present? %>
@@ -36,12 +37,12 @@
   </div>
 <% end %>
 </div>
-
+</div>
 
 <!--- User Places --->
 <div class="clear"></div>
 <br />
-<h2 class="text-center">My Places</h2>
+<h1 class="text-center">My Places</h1>
 <br />
 <% @user.places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
