@@ -20,14 +20,15 @@ Interface
 
 After signing up to be a registered user of Nomster, users have the option to add a "New Place" to the application's index of eateries.
 
-![](images/addplace.PNG)
+![](images2/addplace.PNG)
 
 After creating a place, a representation of where the place is located on a map is generated automatically thanks to Google Maps API integration.
 
-![](images/whatamap.PNG)
+![](images2/whatamap.PNG)
 
 Any registered user may add a photo or comment to any place shown in the app. 
 
-![](images/addphoto.PNG) ![](images/addcomment.PNG)
+![](images2/addphoto.PNG) 
+![](images2/addcomment.PNG)
 
 Nomster is deployed at https://nomster-handkins.herokuapp.com/
