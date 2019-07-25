@@ -1,24 +1,33 @@
-# README
+Nomster
+=======
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Nomster is a Yelp clone that allows registered users to add places to the app's database that may then be reviewed with star-ratings and comments from any registered user.
 
-Things you may want to cover:
+Technologies Used
+-----------------
 
-* Ruby version
+  * Ruby, v. 2.5.3 (primary programming language)
+  * Rails (framework)
+  * Bootstrap (design elements)
+  * Google Maps API (restaurant map placement)
+  * Devise (user authentication)
+  * Carrierwave (image and video uploading)
+  * AWS (image and video storage)
+  * will_paginate (pagination of index)
 
-* System dependencies
+Interface
+---------
 
-* Configuration
+After signing up to be a registered user of Nomster, users have the option to add a "New Place" to the application's index of eateries.
 
-* Database creation
+![](images/addplace.PNG)
 
-* Database initialization
+After creating a place, a representation of where the place is located on a map is generated automatically thanks to Google Maps API integration.
 
-* How to run the test suite
+![](images/whatamap.PNG)
 
-* Services (job queues, cache servers, search engines, etc.)
+Any registered user may add a photo or comment to any place shown in the app. 
 
-* Deployment instructions
+![](images/addphoto.PNG) ![](images/addcomment.PNG)
 
-* ...
+Nomster is deployed at https://nomster-handkins.herokuapp.com/
